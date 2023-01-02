@@ -1,0 +1,175 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    height: 625px;
+    width: 625px;
+    margin: 0 auto;
+    margin-top: 10%;
+    background-color:#D91567;
+    overflow: hidden;
+}
+.hidden{
+    display: none;
+}
+.show{
+    display: block;
+}
+.frame-1{
+    position: relative;
+}
+.text-content-1{
+    position: absolute;
+    top: 20%;
+}
+.text-content-3{
+    position: absolute;
+    top: 8%;
+}
+.text-content-2{
+    position: absolute;
+    top: 8%;
+}
+.first-heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 68px;
+    text-align: center;
+    color: #fff;
+}
+.second-heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.text-content-1 p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.slider{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,10%);
+}
+
+.bottle-1{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,45%);
+    transition:all 2s;
+}
+.bottle-2{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-45%);
+    transition:all 2s;
+}
+.bottle-3{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-35%);
+}
+.bottle-4{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-10%);
+}
+
+.logo{
+    position: absolute;
+    bottom: 4%;
+    right: 4%;
+}
+
+.bottle-click{
+    transform: translate(-50%,-50%);
+}
+
+.code{
+    display: flex;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
+}
+.span-text{
+    background-color: #040000;
+    border-radius: 20px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    padding: 0 10px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center; 
+    color: #FFFFFF;
+}
+.code img{
+    margin-left:10px ;
+}
+.copy{
+    cursor: pointer;
+}
+
+@media (max-width : 600px) {
+    .main-container{
+        width: 80%;
+    }
+    .text-content-1{
+        top:5%;
+    }
+    .first-heading{
+        font-size: 2rem;
+    }
+    .second-heading{
+        font-size: 1.5rem;
+    }
+    .span-text{
+        padding: 1px 10px;
+        font-size: 1rem;
+        line-height: 35px;
+    }
+    .text-content-1 p{
+        font-size: 1.2rem;
+    }
+    .bottle-4{
+        width: 45%;
+        height: 40%;
+        transform: translate(-50%,10%);
+    }
+    .bottle-3{
+        width: 40%;
+        height: 50%;
+        transform: translate(-50%,-20%);
+    }
+    .code img{
+        height: 30px;
+    }
+    .logo{
+        width: 17%;
+        height: 10%;
+        bottom: 3%;
+        right: 4%;
+    }
+
+}
