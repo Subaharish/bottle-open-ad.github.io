@@ -188,26 +188,48 @@ let pad = document.querySelector(".main-container");
 
 
 
-    let heroText = document.querySelector('.content h1');
-    let content = document.querySelector('.content')
-    let bottle = document.querySelector('.bottle-img');
-    let mainContainer = document.querySelector('.main-container')
+    // let heroText = document.querySelector('.content h1');
+    // let content = document.querySelector('.content')
+    // let bottle = document.querySelector('.bottle-img');
+    // let mainContainer = document.querySelector('.main-container')
 
     
     
-        content.style.animation = `fadeup 0.5s linear`;
-        content.style.animationIterationCount = `1`;
-        setTimeout(()=>{
-            bottle.style.animation = `moveup 0.5s linear`;
-            bottle.style.animationIterationCount = `1`;
-        })
+        // content.style.animation = `fadeup 0.5s linear`;
+        // content.style.animationIterationCount = `1`;
+        // setTimeout(()=>{
+        //     bottle.style.animation = `moveup 0.5s linear`;
+        //     bottle.style.animationIterationCount = `1`;
+        // })
 
         
-        setTimeout(()=>{
+        // setTimeout(()=>{
 
-            content.style.display = `none`;
-            bottle.style.top = `20%`;
-        },350)
+        //     content.style.display = `none`;
+        //     bottle.style.top = `20%`;
+        // },350)
+            textContentOne.classList.add('hidden')
+            slideUp.classList.add('hidden')
+            bottleFirst.classList.add('bottle-click')
+            setTimeout(()=>{
+                bottleFirst.classList.add('hidden')
+                bottleSecond.classList.remove('hidden')
+            },2000)
+            setTimeout(()=>{
+                bottleSecond.classList.add('hidden')
+                bgFirst.classList.add('hidden')
+                bottleThird.classList.remove('hidden')
+                bgSecond.classList.remove('hidden')
+                textContentThird.classList.remove('hidden')
+            },4000)
+            setTimeout(()=>{
+                bgSecond.classList.add('hidden')
+                textContentThird.classList.add('hidden')
+                bottleThird.classList.add('hidden')
+                bgFirst.classList.remove('hidden')
+                bottleForth.classList.remove('hidden')
+                textContentSecond.classList.remove('hidden')
+            },6000)
 
       }
     }
